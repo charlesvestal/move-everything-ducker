@@ -2,7 +2,7 @@
   "id": "ducker",
   "name": "Ducker",
   "abbrev": "DK",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MIDI-triggered sidechain ducker - classic pumping without an audio sidechain",
   "author": "charlesvestal",
   "license": "MIT",
@@ -20,7 +20,25 @@
               "key": "channel",
               "label": "Channel",
               "type": "enum",
-              "options": ["Omni", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+              "options": [
+                "Omni",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16"
+              ],
               "default": "1"
             },
             {
@@ -36,7 +54,10 @@
               "key": "mode",
               "label": "Mode",
               "type": "enum",
-              "options": ["Trigger", "Gate"],
+              "options": [
+                "Trigger",
+                "Gate"
+              ],
               "default": "Trigger"
             },
             {
@@ -83,7 +104,12 @@
               "key": "curve",
               "label": "Curve",
               "type": "enum",
-              "options": ["Linear", "Expo", "S-Curve", "Pump"],
+              "options": [
+                "Linear",
+                "Expo",
+                "S-Curve",
+                "Pump"
+              ],
               "default": "Linear"
             },
             {
@@ -97,7 +123,16 @@
               "unit": "%"
             }
           ],
-          "knobs": ["channel", "trigger_note", "mode", "depth", "attack", "hold", "release", "curve"]
+          "knobs": [
+            "channel",
+            "trigger_note",
+            "mode",
+            "depth",
+            "attack",
+            "hold",
+            "release",
+            "curve"
+          ]
         }
       }
     }
